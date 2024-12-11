@@ -3,56 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resource AI - Under Maintenance</title>
+    <title>Resource AI</title>
+    <script>
+        // Redirect to maintenance page if on GitHub Pages
+        if (window.location.hostname.includes('github.io')) {
+            window.location.replace('maintenance.html');
+        }
+    </script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             font-family: 'Open Sans', sans-serif;
             background-color: #1e1e1e;
             color: #ffffff;
-        }
-
-        .maintenance-container {
-            text-align: center;
-            padding: 2rem;
-            max-width: 600px;
-        }
-
-        .logo {
-            width: 200px;
-            height: auto;
-            margin-bottom: 2rem;
-        }
-
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #ffffff;
-            font-weight: 600;
-        }
-
-        p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #ffffff;
-            margin-bottom: 1.5rem;
-            font-weight: 400;
+            margin: 0;
+            padding: 0;
         }
     </style>
 </head>
 <body>
-    <div class="maintenance-container">
-        <img src="assets/Logowht.png" alt="Resource AI Logo" class="logo">
-        <h1>We're Getting a Makeover!</h1>
-        <p>Our website is currently under maintenance as we work on bringing you an improved experience.</p>
-        <p>Please check back soon.</p>
-    </div>
+    <!-- This is where we'll build the actual site -->
+    <main>
+        <h1>Resource AI Development Site</h1>
+        <!-- Development content will go here -->
+    </main>
 </body>
 </html>
