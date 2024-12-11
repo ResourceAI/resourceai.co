@@ -1,15 +1,21 @@
-# My Website
+# Resource AI Website
 
-This is a website originally built in Webflow, now hosted on GitHub Pages.
+This repository contains the Resource AI website, currently being rebuilt from Webflow.
 
-## Setup
-1. Clone this repository
-2. Open index.html to view the website locally
-3. Push changes to the `main` branch to deploy
+## Current Status
+- Site is under maintenance while rebuilding
+- Displaying temporary maintenance page
 
 ## Development
-- HTML/CSS files are exported from Webflow
-- Additional customizations can be made directly in the code
+- Website is being rebuilt using custom code
+- Original design based on Webflow site
 
 ## Hosting
 This website is hosted using GitHub Pages at: [your-username.github.io/repository-name]
+
+## Todo
+- [ ] Implement main navigation
+- [ ] Rebuild homepage
+- [ ] Add content sections
+- [ ] Implement responsive design
+- [ ] Add interactive elements
