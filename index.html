@@ -5,27 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resource AI</title>
     <script>
-        // Redirect to maintenance page if on GitHub Pages
+        // Redirect to maintenance page if on GitHub Pages, otherwise go to home
         if (window.location.hostname.includes('github.io')) {
             window.location.replace('maintenance.html');
+        } else {
+            window.location.replace('./home.html');
         }
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            background-color: #1e1e1e;
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-        }
-    </style>
 </head>
 <body>
-    <!-- This is where we'll build the actual site -->
-    <main>
-        <h1>Resource AI Development Site</h1>
-        <!-- Development content will go here -->
-    </main>
+    <!-- This page automatically redirects -->
 </body>
 </html>

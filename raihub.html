@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAIhub - Resource AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div id="sidebar"></div>
+    <main>
+        <div class="content">
+            <h1 class="heading2">RAIhub</h1>
+            <p class="intro">Your central dashboard for accessing and managing all Resource AI services.</p>
+
+            <section class="content-section">
+                <h2>Overview</h2>
+                <p>RAIhub is your centralized platform for accessing and managing all Resource AI services. Built with modern technology and designed for ease of use, RAIhub provides a seamless experience for organizations looking to leverage AI capabilities.</p>
+            </section>
+
+            <section class="content-section">
+                <h2>Key Features</h2>
+                <div class="feature-grid">
+                    <div class="feature feature-large">
+                        <h3>Intelligent Image-Derived Product Data Generation</h3>
+                        <p>Generate exceptional product data from your product images. Target individual products in complex, multi-product images or flat-lays. RAIhub's unique multi-step process yields detailed descriptions of your products which enable a host of downstream features including unmatched product descriptions, meta-data, semantic product search and so much more.</p>
+                        
+                        <div class="feature-details hidden">
+                            <div class="feature-nav">
+                                <button class="nav-item active" onclick="showTab('iipd-overview')">Overview</button>
+                                <button class="nav-item" onclick="showTab('image-processing')">Image Processing</button>
+                                <button class="nav-item" onclick="showTab('data-extraction')">Data Extraction</button>
+                                <button class="nav-item" onclick="showTab('optimization')">Optimization</button>
+                                <button class="nav-item" onclick="showTab('integration')">Integration</button>
+                            </div>
+
+                            <div id="iipd-overview" class="tab-content active">
+                                <p>Our Image First Product Data Generation system transforms the way you create and manage product listings. By starting with product images, our AI generates rich, accurate product data that drives conversions and improves searchability.</p>
+                                <p>The system continuously learns from your product catalog and industry standards to deliver increasingly accurate and relevant product information.</p>
+                            </div>
+
+                            <div id="image-processing" class="tab-content">
+                                <p>Advanced computer vision algorithms analyze product images to identify key features, materials, colors, and design elements. The system can process multiple angles and detailed shots to build a comprehensive understanding of each product.</p>
+                                <p>Our AI can handle batch processing of thousands of images while maintaining consistent quality and accuracy.</p>
+                            </div>
+
+                            <div id="data-extraction" class="tab-content">
+                                <p>The system extracts detailed product specifications, measurements, and features directly from images. It generates natural, compelling product descriptions that highlight key selling points and unique characteristics.</p>
+                                <p>All generated data adheres to your brand voice and industry-specific terminology requirements.</p>
+                            </div>
+
+                            <div id="optimization" class="tab-content">
+                                <p>Product data is automatically optimized for SEO, marketplace requirements, and mobile commerce. The system generates appropriate tags, categories, and search terms to maximize product visibility.</p>
+                                <p>Built-in quality checks ensure consistency and compliance with platform-specific requirements.</p>
+                            </div>
+
+                            <div id="integration" class="tab-content">
+                                <p>Seamlessly integrate with your existing e-commerce platforms, PIM systems, and marketplace listings. Our API-first approach enables automated workflow integration and real-time data updates.</p>
+                                <p>Support for major e-commerce platforms ensures your product data remains synchronized across all sales channels.</p>
+                            </div>
+
+                            <a href="contact.html" class="cta-button">Schedule a Demo</a>
+                        </div>
+                        
+                        <button class="expand-btn" onclick="toggleFeatureDetails(this)">Learn More</button>
+                    </div>
+
+                    <div class="feature feature-large">
+                        <h3>AI-Assisted Content Creation From Approved Research Sources</h3>
+                        <p>RAIhub realises the time and cost saving potential of AI-assisted blogging and social media content creation for teams that value relevance, currency and quality. Assemble your own list of trusted, vetted research sources and let RAIhub assist from intelligent topic suggestions to final copywriting.</p> 
+                        <p>Significantly improve the quality and pace of your content team's output while eliminating the risks and inflexibility of consumer-grade AI tools. Empowers your brand with beyond-human, industry-specific research and news filtering, combined with exceptional, on-brand copywriting.</p>
+                        <p>RAIhub's underlying infrastructure is continually updated to best in-class technologies and methodologies, while retaining your customisations. So you're always using the the most capable stable tech in your AI assisted content marketing.</p>
+                        
+                        <div class="feature-details hidden">
+                            <div class="feature-nav">
+                                <button class="nav-item" onclick="showTab('research')">Research</button>
+                                <button class="nav-item" onclick="showTab('ideation')">Ideation</button>
+                                <button class="nav-item" onclick="showTab('messaging')">Messaging</button>
+                                <button class="nav-item" onclick="showTab('writer')">Writer</button>
+                            </div>
+
+                            <div id="research" class="tab-content">
+                                <p>Voltaire understands your content marketing goals and leverages this understanding to perform autonomous and comprehensive subject matter research. The Researcher AI uses powerful tools to read current news, scrape web content, and compile research for your content.</p>
+                                <p>Based on your needs, you can direct Researcher to monitor trending stories from your preferred blogs, news outlets, or social media accounts.</p>
+                            </div>
+
+                            <div id="ideation" class="tab-content">
+                                <p>Voltaire meticulously controls the generative AI's behavior in topic selection. It generates ideas based on vetted and curated research, ensuring alignment with your brand and marketing objectives.</p>
+                                <p>With knowledge of your past content and current marketing campaigns, Voltaire recommends content ideas that support your broader objectives while avoiding repetition or contradiction.</p>
+                            </div>
+
+                            <div id="messaging" class="tab-content">
+                                <p>Provide Voltaire with your insights, opinions, and marketing messaging for inclusion in the final content. Your input is captured before the custom Writer AI produces the final product, ensuring seamless integration of your messaging regardless of format.</p>
+                            </div>
+
+                            <div id="writer" class="tab-content">
+                                <p>Through fine-tuning with your existing content, Voltaire learns the nuances of your brand tone, language conventions, and word choices. ResourceAI's custom tools can extract fine-tuning data from your existing media.</p>
+                                <p>For those starting fresh, we offer a range of existing models and assist in crafting a unique brand tone as you use Voltaire.</p>
+                            </div>
+
+                            <a href="contact.html" class="cta-button">Contact Us to Build Your Voltaire</a>
+                        </div>
+                        
+                        <button class="expand-btn" onclick="toggleFeatureDetails(this)">Learn More</button>
+                    </div>
+                    
+                    <div class="feature">
+                        <h3>Service Management</h3>
+                        <p>Access and manage all your AI services from a single dashboard.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Usage Analytics</h3>
+                        <p>Track and analyze your AI service usage and performance metrics.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>Getting Started</h2>
+                <p>Contact us to set up your RAIhub account and begin exploring our suite of AI services.</p>
+            </section>
+        </div>
+    </main>
+    <script src="js/components.js"></script>
+    <script>
+        loadComponent('sidebar', 'components/sidebar.html');
+
+        function toggleFeatureDetails(btn) {
+            const feature = btn.closest('.feature');
+            const details = feature.querySelector('.feature-details');
+            details.classList.toggle('hidden');
+            btn.textContent = details.classList.contains('hidden') ? 'Learn More' : 'Hide Details';
+        }
+
+        function showTab(tabId) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            // Show selected tab
+            document.getElementById(tabId).classList.add('active');
+            
+            // Update nav buttons
+            document.querySelectorAll('.nav-item').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html> 
