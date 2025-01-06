@@ -16,6 +16,10 @@ body {
     background-color: #1e1e1e;
     padding: 2rem;
     border-right: 1px solid rgba(255, 255, 255, 0.1);
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
 }
 
 .sidebar-container img {
@@ -87,7 +91,7 @@ main {
 h1.heading2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
     font-weight: 600;
     letter-spacing: -0.5px;
 }
@@ -95,7 +99,7 @@ h1.heading2 {
 .intro {
     font-size: 1.25rem;
     line-height: 1.6;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     color: rgba(255, 255, 255, 0.9);
     font-weight: 400;
 }
@@ -347,6 +351,7 @@ h1.heading2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
+    align-items: center;
 }
 
 .contact-item h3 {
@@ -361,6 +366,31 @@ h1.heading2 {
 
 .contact-link:hover {
     color: #ffffff;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    color: #ffffff;
+}
+
+.social-link:hover .social-icon {
+    opacity: 1;
 }
 
 @keyframes fadeIn {
