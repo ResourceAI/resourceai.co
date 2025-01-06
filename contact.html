@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Resource AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div id="sidebar"></div>
+    <main>
+        <div class="content">
+            <h1 class="heading2 brand-text">Contact Us</h1>
+            <p class="intro">Ready to transform your business with AI? We're here to help you get started.</p>
+
+            <div class="gradient-frame">
+                <div class="gradient-frame-inner">
+                    <section class="content-section">
+                        <h2>Get in Touch</h2>
+                        <p>Whether you're looking to explore AI solutions, need technical consultation, or want to discuss a specific project, our team is ready to help.</p>
+                        
+                        <form action="https://formspree.io/f/xwppwrzw" method="POST" class="contact-form">
+                            <input type="hidden" name="_subject" value="New contact from ResourceAI website">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-button">Send Message</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+
+            <section class="content-section">
+                <div class="gradient-frame">
+                    <div class="gradient-frame-inner">
+                        <h2>Other Ways to Connect</h2>
+                        <div class="contact-grid">
+                            <div class="contact-item">
+                                <h3>Email</h3>
+                                <p><a href="mailto:hello@resourceai.co" class="contact-link">hello@resourceai.co</a></p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Location</h3>
+                                <p>Melbourne, Australia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="js/components.js"></script>
+    <script>
+        loadComponent('sidebar', 'components/sidebar.html');
+
+        const form = document.querySelector('.contact-form');
+        form.addEventListener('submit', function(e) {
+            const formData = new FormData(form);
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = 'https://resourceai.co/thank-you.html';
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Sorry, there was a problem submitting your form. Please try again.');
+            });
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html> 

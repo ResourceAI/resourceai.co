@@ -2,18 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resource AI</title>
+    <title>Redirecting...</title>
     <script>
-        // Redirect to maintenance page if on GitHub Pages, otherwise go to home
-        if (window.location.hostname.includes('github.io')) {
-            window.location.replace('maintenance.html');
-        } else {
-            window.location.replace('./home.html');
+        try {
+            // Try both relative and absolute paths
+            const homePage = './home.html';
+            
+            // Log the current path for debugging
+            console.log('Current path:', window.location.href);
+            console.log('Attempting to redirect to:', homePage);
+            
+            // Attempt the redirect
+            window.location.replace(homePage);
+            
+            // Fallback if replace doesn't work
+            setTimeout(function() {
+                window.location.href = homePage;
+            }, 100);
+        } catch (e) {
+            console.error('Redirect failed:', e);
+            // If all else fails, try a meta refresh
+            document.write('<meta http-equiv="refresh" content="0; url=home.html">');
         }
     </script>
 </head>
 <body>
-    <!-- This page automatically redirects -->
+    <p>If you are not redirected automatically, please <a href="home.html">click here</a>.</p>
+    <script>
+        // Additional check if we somehow reach here
+        if (document.readyState === 'complete') {
+            window.location.href = 'home.html';
+        }
+    </script>
 </body>
 </html>
