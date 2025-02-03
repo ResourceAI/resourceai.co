@@ -84,8 +84,8 @@
         // Initialize Rive animation
         const canvas = document.getElementById('rive-canvas');
         
-        // Use the local Rive file
-        const animationURL = './herobg.riv';
+        // Use the local Rive file with exact filename case
+        const animationURL = './Herobg.riv';
 
         // Set up Rive
         new rive.Rive({
@@ -93,6 +93,9 @@
             canvas: canvas,
             autoplay: true,
             fit: rive.Fit.cover,
+            onError: (err) => {
+                console.error('Rive error:', err);
+            }
         });
     </script>
 </body>
